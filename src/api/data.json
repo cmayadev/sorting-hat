@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "question" : "¿Cómo te definirías?", 
+        "answers" : 
+            [
+                { "Valiente" : "Gryffindor" },
+                { "Leal" : "Hufflepuff" },
+                { "Sabio" : "Ravenclaw" },
+                { "Ambicioso" : "Slytherin" }
+            ]
+    },
+    {
+        "id": 2,
+        "question" : "¿Cuál es tu clase favorita?", 
+        "answers" : 
+            [
+                { "Vuelo" : "Gryffindor" },
+                { "Pociones" : "Ravenclaw" },
+                { "Defensa contra las artes oscuras" : "Slytherin" },
+                { "Animales fantásticos" : "Hufflepuff" }
+            ]
+    },
+    {
+        "id": 3,
+        "question" : "¿Dónde pasarías más tiempo?", 
+        "answers" : 
+            [
+                { "Invernadero" : "Hufflepuff" },
+                { "Biblioteca" : "Ravenclaw" },
+                { "En la sala común" : "Slytherin" },
+                { "Explorando" : "Gryffindor" }
+            ]
+    },
+    {
+        "id": 4,
+        "question" : "¿Cuál es tu color favorito?", 
+        "answers" : 
+            [
+                { "Rojo" : "Gryffindor" },
+                { "Azul" : "Ravenclaw" },
+                { "Verde" : "Slytherin" },
+                { "Amarillo" : "Hufflepuff" }
+            ]
+    },
+    {
+        "id": 5,
+        "question" : "¿Cuál es tu mascota?", 
+        "answers" : 
+            [
+                { "Sapo" : "Ravenclaw" },
+                { "Lechuza" : "Gryffindor" },
+                { "Gato" : "Hufflepuff" },
+                { "Serpiente" : "Slytherin" }
+            ]
+    }
+]
