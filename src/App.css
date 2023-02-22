@@ -2,7 +2,14 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+}
+
+.App {
+  min-width: 600px;
+}
+
+.question-title {
+  margin-bottom: 32px;
 }
 
 .answers {
@@ -13,10 +20,94 @@
 .answers li {
   color: #444;
   cursor: pointer;
-  height: 32px;
-  line-height: 32px;
+  height: 48px;
+  line-height: 48px;
   background: white;
-  border-radius: 2px;
-  margin-bottom: 16px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  transition: all .25s;
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.answers .active {
+  border: 1px solid #333;
+}
+
+.answers li:hover {
+  transform: translate(0, -2px);
+}
+
+.house {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.result {
+  display: grid;
+  align-content: center;
+  min-width: 500px;
+  text-align: center;
+}
+
+.result em {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.result img {
+  height: 250px;
+  margin: 0 auto;
+}
+
+.scores {
+  display: grid;
+  align-content: center;
+  text-align: left;
+}
+
+.scores h4 {
+  margin: 12px 0;
+  width: 100px;
+}
+
+.score {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: left;
+  gap: 16px;
+}
+
+progress {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.progress.Gryffindor {
+  background-color: #D74F3F;
+}
+.progress.Ravenclaw {
+  background-color: #21316B;
+}
+.progress.Slytherin {
+  background-color: #005D4B;
+}
+.progress.Hufflepuff {
+  background-color: #FFB72F;
+}
+progress::-webkit-progress-bar {
+  background-color: #FFF;
+}
+.progress.Gryffindor::-webkit-progress-value {
+  background-color: #D74F3F;
+}
+.progress.Slytherin::-webkit-progress-value {
+  background-color: #005D4B;
+}
+.progress.Hufflepuff::-webkit-progress-value {
+  background-color: #FFB72F;
+}
+.progress.Ravenclaw::-webkit-progress-value {
+  background-color: #21316B;
 }

@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Gryffindor",
+        "slug": "gryffindor",
+        "quote": "Or perhaps in Slytherin, You'll make your real friends, Those cunning folk use any means, To achieve their ends.",
+        "animal": "Lion",
+        "traits": ""
+    },
+    {
+        "name": "Slytherin",
+        "slug": "slytherin",
+        "quote": "Or perhaps in Slytherin, You'll make your real friends, Those cunning folk use any means, To achieve their ends.",
+        "animal": "Snake"
+    },
+    {
+        "name": "Ravenclaw",
+        "slug": "ravenclaw",
+        "quote": "Or yet in wise old Ravenclaw, If you've a ready mind, Where those of wit and learning, Will always find their kind.",
+        "animal": "Eagle"
+    },
+    {
+        "name": "Hufflepuff",
+        "slug": "hufflepuff",
+        "quote": "You might belong in Hufflepuff, Where they are just and loyal, Those patient Hufflepuffs are true, And unafraid of toil.",
+        "animal": "Badger"
+    }
+]
