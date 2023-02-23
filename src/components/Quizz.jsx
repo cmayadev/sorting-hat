@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+import Button from './Button';
 import House from './House';
 import Question from './Question';
 
@@ -32,23 +33,18 @@ const Quizz = ({questionList}) => {
     }
 
     return ( 
-        result ?
-            <House result={result} scores={scores} />
-        :
-        <>
-            <h2>Pregunta {step} de {questionList.length}</h2>
+        result 
+        ? <House result={result} scores={scores} />
+        : <div className="quizz">
             <div>
                 <Question question={currentQuestion.question} answers={currentQuestion.answers} selectedAnswer={selectedAnswer} setSelectedAnswer={setSelectedAnswer} scores={scores} setScores={setScores} />
-            </div>
-            <br/>
-            <div>
-                {
-                    step < questionList.length 
-                        ? <button disabled={!selectedAnswer} onClick={handleStep}>Next</button> 
-                        : <button onClick={handleFinish}>Finish</button>
-                }
-            </div>
-        </>
+            </div>            
+            {
+                step < questionList.length 
+                    ? <Button disabled={!selectedAnswer} onClick={handleStep}>Next</Button> 
+                    : <Button onClick={handleFinish}>Finish</Button>
+            }
+        </div>
     );
 }
 

@@ -28,7 +28,7 @@ const House = (props) => {
                 <em>"{quote}"</em>
             </div>
             <div className="scores">
-                <h3>Your result:</h3>
+                <h3>Your result</h3>
                 {percentageScores.map(({ house, percentage }) => (
                     <div key={house} className="score">
                         <h4>{house}</h4>
