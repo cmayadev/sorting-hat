@@ -2,6 +2,7 @@ import './App.css'
 
 import questionList from './api/data.json';
 
+import Home from './components/Home';
 import Quizz from './components/Quizz';
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
 
   return (
     <div className="App">
-      <Quizz questionList={questions} />
+      <Home />
+{/*       <Quizz questionList={questions} /> */}
     </div>
   );
 }
