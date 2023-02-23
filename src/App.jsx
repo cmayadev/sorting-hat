@@ -1,19 +1,25 @@
-import './App.css'
+import { Routes, Route } from "react-router-dom";
 
 import questionList from './api/data.json';
 
-import Home from './components/Home';
-import Quizz from './components/Quizz';
+import Home from './pages/Home';
+import Quizz from './pages/Quizz';
+
+import Layout from './components/Layout';
+
+import './App.css'
 
 function App() {
 
   const questions = questionList.sort(() => Math.random() - 0.5);
 
   return (
-    <div className="App">
-      <Home />
-{/*       <Quizz questionList={questions} /> */}
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sorting" element={<Quizz questionList={questions} />} />
+      </Routes>
+    </Layout>
   );
 }
 

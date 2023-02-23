@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-import Button from './Button';
-import House from './House';
-import Question from './Question';
+import Button from '../components/Button';
+import House from '../components/House';
+import Question from '../components/Question';
 
 const Quizz = ({questionList}) => {
 
