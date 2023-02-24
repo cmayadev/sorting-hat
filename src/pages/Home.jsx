@@ -6,7 +6,10 @@ const Home = () => {
     return ( 
         <div className="hero">
             <div className="slogan">
-                <h1>Discover your Hogwarts House</h1>
+                <div className="heading">
+                    <span>Sorting ceremony</span>
+                    <h1>Discover your Hogwarts House</h1>
+                </div>
                 <div className="shields">
                     <img src="./gryffindor_min.svg" alt="Gryffindor Shield" />
                     <img src="./ravenclaw_min.svg" alt="Ravenclaw Shield" />

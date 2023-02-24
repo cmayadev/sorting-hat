@@ -23,7 +23,7 @@ const House = (props) => {
     return ( 
         <div className="house">
             <div className="result">
-                <img src={`${slug}.webp`} alt="" />
+                <img src={`images/houses/${slug}.webp`} alt="" />
                 <h2>{name}</h2>
                 <em>"{quote}"</em>
             </div>
